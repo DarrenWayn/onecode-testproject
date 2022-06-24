@@ -1,0 +1,18 @@
+
+.tooltip {
+    display: inline;
+    position: relative;
+
+    &:hover:after{
+        display: flex;
+        justify-content: center;
+        background: $light;
+        border-radius: 1rem;
+        border: 3px solid lightblue;
+        color: black;
+        content: attr(title);
+        margin: 0 auto;
+        font-size: 1rem;
+        padding: 1rem;
+    }
+}

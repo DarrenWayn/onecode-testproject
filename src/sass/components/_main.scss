@@ -1,0 +1,13 @@
+.main {
+    padding-inline: 4rem;
+    padding-block: 2rem;
+
+    label {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    p {
+        color: gray;
+    }
+}

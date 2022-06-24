@@ -1,0 +1,114 @@
+@media (min-width: 280px) {
+  .responsive-test {
+    color: red;
+  }
+}
+@media (min-width: 370px) {
+  .responsive-test {
+    color: blue;
+  }
+}
+@media (min-width: 720px) {
+  .responsive-test {
+    color: green;
+  }
+}
+@media (min-width: 960px) {
+  .responsive-test {
+    color: purple;
+  }
+}
+@media (min-width: 1200px) {
+  .responsive-test {
+    color: orange;
+  }
+}
+@media (min-width: 1400px) {
+  .responsive-test {
+    color: pink;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Fira Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+hr {
+  border: 0;
+  border-top: 1px dotted #efefef;
+}
+
+img {
+  max-width: 100%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  min-height: 150vh;
+  background-color: #EEE;
+  color: #111829;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 4rem;
+  padding-block: 2rem;
+}
+.header h1 {
+  font-weight: 600;
+}
+.header h1 span {
+  color: lightskyblue;
+}
+.header h1:hover {
+  cursor: pointer;
+}
+.header p {
+  font-size: 1.2rem;
+  font-weight: 520;
+  color: gray;
+}
+.header p:hover {
+  cursor: pointer;
+  text-decoration: 0.2rem underline lightskyblue;
+}
+
+.main {
+  padding-inline: 4rem;
+  padding-block: 2rem;
+}
+.main label {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.tooltip {
+  display: inline;
+  position: relative;
+}
+.tooltip:hover:after {
+  display: flex;
+  justify-content: center;
+  background: #EEE;
+  border-radius: 1rem;
+  border: 3px solid lightblue;
+  color: black;
+  content: attr(title);
+  margin: 0 auto;
+  font-size: 1rem;
+  padding: 1rem;
+}
